@@ -2,9 +2,11 @@ package step.impl;
 
 
 import dd.impl.DataDefinitionRegistry;
+import flow.execution.context.StepExecutionContext;
 import step.api.AbstractStepDefinition;
 import step.api.DataDefinitionDeclarationImpl;
 import step.api.DataNecessity;
+import step.api.StepResult;
 
 public class SpendSomeTime extends AbstractStepDefinition {
     public SpendSomeTime(){
@@ -14,6 +16,16 @@ public class SpendSomeTime extends AbstractStepDefinition {
 
     @Override
     public StepResult invoke(StepExecutionContext context) {
+    /*    int timeToSpend=context.getDataValue("TIME_TO_SPEND",Integer.class);
+        long start = System.currentTimeMillis();
+
+        try {
+            Thread.sleep(timeToSpend);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("Sleep time in ms = " + (System.currentTimeMillis() - start));
+*/
         return null;
     }
 }

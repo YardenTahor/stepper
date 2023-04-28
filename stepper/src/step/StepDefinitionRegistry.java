@@ -26,4 +26,9 @@ public enum StepDefinitionRegistry {
     public StepDefinition getStepDefinition() {
         return stepDefinition;
     }
+    public StepDefinition getStepDefinitionByName(String name)
+    {
+        StepDefinitionRegistry step = StepDefinitionRegistry.valueOf(name);
+        return step.getStepDefinition();
+    }
 }

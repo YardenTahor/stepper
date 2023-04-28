@@ -13,5 +13,6 @@ public interface FlowDefinition {
     List<DataDefinitionDeclaration> getFlowFreeInputs();
     void addFlowOutput(String outputName);
     void addStepToFlow(StepUsageDeclaration step);
+    void setStepsUsageNameFromSteps(List<StepUsageDeclaration> steps);
 
 }

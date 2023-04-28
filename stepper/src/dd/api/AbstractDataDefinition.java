@@ -5,7 +5,7 @@ public abstract class AbstractDataDefinition implements DataDefinition{
     private final boolean userFriendly;
     private final Class<?> type;
 
-    public AbstractDataDefinition(String name, boolean userFriendly, Class<?> type){
+    protected AbstractDataDefinition(String name, boolean userFriendly, Class<?> type){
         this.name = name;
         this.userFriendly = userFriendly;
         this.type = type;
